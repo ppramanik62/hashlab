@@ -1,0 +1,17 @@
+[package]
+name = "hashlab"
+version = "0.1.0"
+edition = "2024"
+description = "A hash table lab: every part of a hash table can be swapped, measured and watched."
+publish = false
+
+# This crate is its own workspace, so cargo never looks at a parent folder.
+[workspace]
+
+[lints.rust]
+unsafe_code = "deny"
+missing_docs = "warn"
+
+[lints.clippy]
+dbg_macro = "warn"
+todo = "warn"
